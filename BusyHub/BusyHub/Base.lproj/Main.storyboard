@@ -32,7 +32,14 @@
                             <outlet property="delegate" destination="03L-sg-OnN" id="6At-3d-X8n"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="BusyHub" id="WSB-w6-d3A"/>
+                    <navigationItem key="navigationItem" title="BusyHub" id="WSB-w6-d3A">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="3Eo-gD-NcP">
+                            <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <connections>
+                                <action selector="addButtonPressed:" destination="03L-sg-OnN" id="gF7-Mj-T9D"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XhC-Yq-pEg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
