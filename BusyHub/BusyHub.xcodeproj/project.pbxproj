@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B52B0AD0223B02A200ED9A9A /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52B0ACF223B02A200ED9A9A /* CategoryViewController.swift */; };
 		B5A1D54422327C6900847334 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A1D54322327C6900847334 /* AppDelegate.swift */; };
 		B5A1D54622327C6900847334 /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A1D54522327C6900847334 /* TodoListViewController.swift */; };
 		B5A1D54922327C6900847334 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5A1D54722327C6900847334 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B52B0ACF223B02A200ED9A9A /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		B5A1D54022327C6900847334 /* BusyHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusyHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5A1D54322327C6900847334 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5A1D54522327C6900847334 /* TodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 		B5A1D55A2232D2A400847334 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B52B0ACF223B02A200ED9A9A /* CategoryViewController.swift */,
 				B5A1D54522327C6900847334 /* TodoListViewController.swift */,
 			);
 			path = Controllers;
@@ -170,6 +173,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B52B0AD0223B02A200ED9A9A /* CategoryViewController.swift in Sources */,
 				B5A1D54622327C6900847334 /* TodoListViewController.swift in Sources */,
 				B5AA4E482239658100945FA9 /* DataModel.xcdatamodeld in Sources */,
 				B5A1D54422327C6900847334 /* AppDelegate.swift in Sources */,
