@@ -14,9 +14,13 @@
 		B5A1D54B22327C6A00847334 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5A1D54A22327C6A00847334 /* Assets.xcassets */; };
 		B5A1D54E22327C6A00847334 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5A1D54C22327C6A00847334 /* LaunchScreen.storyboard */; };
 		B5AA4E482239658100945FA9 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B5AA4E462239658100945FA9 /* DataModel.xcdatamodeld */; };
+		CE8E05D2F2935BF2CAE596D0 /* Pods_BusyHub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 223B075C564078EDAE41AD93 /* Pods_BusyHub.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		087209FDCAEA3D773E76F0A0 /* Pods-BusyHub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusyHub.release.xcconfig"; path = "Target Support Files/Pods-BusyHub/Pods-BusyHub.release.xcconfig"; sourceTree = "<group>"; };
+		223B075C564078EDAE41AD93 /* Pods_BusyHub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BusyHub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7FBB39AC1F2442290664C8F /* Pods-BusyHub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusyHub.debug.xcconfig"; path = "Target Support Files/Pods-BusyHub/Pods-BusyHub.debug.xcconfig"; sourceTree = "<group>"; };
 		B52B0ACF223B02A200ED9A9A /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		B5A1D54022327C6900847334 /* BusyHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusyHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5A1D54322327C6900847334 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE8E05D2F2935BF2CAE596D0 /* Pods_BusyHub.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				B5A1D54222327C6900847334 /* BusyHub */,
 				B5A1D54122327C6900847334 /* Products */,
+				F269ADE968F7E0B7203E6090 /* Pods */,
+				E7BB60DD44A6B653813E47D0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +109,23 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		E7BB60DD44A6B653813E47D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				223B075C564078EDAE41AD93 /* Pods_BusyHub.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F269ADE968F7E0B7203E6090 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A7FBB39AC1F2442290664C8F /* Pods-BusyHub.debug.xcconfig */,
+				087209FDCAEA3D773E76F0A0 /* Pods-BusyHub.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,9 +133,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5A1D55222327C6A00847334 /* Build configuration list for PBXNativeTarget "BusyHub" */;
 			buildPhases = (
+				71A74B3E71718787CE00B87E /* [CP] Check Pods Manifest.lock */,
 				B5A1D53C22327C6900847334 /* Sources */,
 				B5A1D53D22327C6900847334 /* Frameworks */,
 				B5A1D53E22327C6900847334 /* Resources */,
+				364588BA0DCB1CCBF2BE8C19 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -167,6 +193,55 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		364588BA0DCB1CCBF2BE8C19 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BusyHub/Pods-BusyHub-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BusyHub/Pods-BusyHub-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71A74B3E71718787CE00B87E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BusyHub-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B5A1D53C22327C6900847334 /* Sources */ = {
@@ -320,6 +395,7 @@
 		};
 		B5A1D55322327C6A00847334 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7FBB39AC1F2442290664C8F /* Pods-BusyHub.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -332,12 +408,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Emanuel-Covaci.BusyHub";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		B5A1D55422327C6A00847334 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 087209FDCAEA3D773E76F0A0 /* Pods-BusyHub.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -350,7 +427,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Emanuel-Covaci.BusyHub";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
